@@ -8,7 +8,12 @@ public class Square {
         this.side = side;
     }
 
+
     public double area() {
-        return side * side;
+        return this.side * this.side;
+    }
+
+    public double perimeter() {
+        return 4 * (this.side);
     }
 }

@@ -5,8 +5,7 @@ public class RectangleShape {
     private double length;
     private double width;
 
-    public RectangleShape(double length, double width)
-    {
+    public RectangleShape(double length, double width) {
         this.length = length;
         this.width = width;
     }
@@ -20,6 +19,6 @@ public class RectangleShape {
     }
 
     public double perimeter() {
-        return 2*(this.length + this.width);
+        return 2 * (this.length + this.width);
     }
 }
