@@ -12,12 +12,14 @@ public class RectangleShape {
     }
 
     public boolean isLengthGreaterThanWidth() {
-        if(this.length > this.width)
-            return true;
-        return false;
+        return this.length > this.width;
     }
 
     public int area() {
         return this.length * this.width;
+    }
+
+    public int perimeter() {
+        return 2*(this.length + this.width);
     }
 }
