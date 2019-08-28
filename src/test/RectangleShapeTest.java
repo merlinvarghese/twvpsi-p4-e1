@@ -1,29 +1,29 @@
 import com.tw.vapasi.RectangleShape;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class RectangleShapeTest {
+class RectangleShapeTest {
     @Test
-    public void isLengthGreaterThanWidthTest()
+    void isLengthGreaterThanWidthTest()
     {
         RectangleShape rectangle = new RectangleShape(6,3);
         assertTrue(rectangle.isLengthGreaterThanWidth());
     }
 
     @Test
-    public void isArea8WithInput2and4()
+    void isArea8WithInput2and4()
     {
         RectangleShape rectangle = new RectangleShape(4,2);
         assertEquals(8, rectangle.area());
     }
 
     @Test
-    public void isPerimeter12WithInput2and4()
+    void isPerimeter12WithInput2and4()
     {
-        RectangleShape rectangle = new RectangleShape(4,2);
-        assertEquals(12,rectangle.perimeter());
+        RectangleShape rectangle = new RectangleShape(4.0,2.0);
+        assertEquals(12.0,rectangle.perimeter());
     }
 
 }

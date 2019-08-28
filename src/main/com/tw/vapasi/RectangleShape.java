@@ -2,10 +2,10 @@ package com.tw.vapasi;
 
 //Deals with four side shape with four perpendicular angle.
 public class RectangleShape {
-    private int length;
-    private int width;
+    private double length;
+    private double width;
 
-    public RectangleShape(int length, int width)
+    public RectangleShape(double length, double width)
     {
         this.length = length;
         this.width = width;
@@ -15,11 +15,11 @@ public class RectangleShape {
         return this.length > this.width;
     }
 
-    public int area() {
+    public double area() {
         return this.length * this.width;
     }
 
-    public int perimeter() {
+    public double perimeter() {
         return 2*(this.length + this.width);
     }
 }
