@@ -1,23 +1,23 @@
-import com.tw.vapasi.RectangleShape;
+import com.tw.vapasi.Rectangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class RectangleShapeTest {
+class RectangleTest {
 
     //region area
     @Test
     void isLengthGreaterThanWidthTest()
-    {
-        RectangleShape rectangle = new RectangleShape(6,3);
+    {//6 3
+        Rectangle rectangle =  Rectangle.createRectangle(6,3);
         assertTrue(rectangle.isLengthGreaterThanWidth());
     }
 
     @Test
     void isArea8WithInput2and4()
     {
-        RectangleShape rectangle = new RectangleShape(4,2);
+        Rectangle rectangle =  Rectangle.createRectangle(4,2);
         assertEquals(8, rectangle.area());
     }
     //endregion
@@ -26,14 +26,14 @@ class RectangleShapeTest {
     @Test
     void isPerimeter12WithInput2and4()
     {
-        RectangleShape rectangle = new RectangleShape(4.0,2.0);
+        Rectangle rectangle =  Rectangle.createRectangle(4.0,2.0);
         assertEquals(12.0,rectangle.perimeter());
     }
 
     @Test
     void isPerimeterEqualsWithFractionInput()
     {
-        RectangleShape rectangle = new RectangleShape(4.2,2.2);
+        Rectangle rectangle =  Rectangle.createRectangle(4.2,2.2);
         assertEquals(12.8,rectangle.perimeter());
     }
     //endregion
